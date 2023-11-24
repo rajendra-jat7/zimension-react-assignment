@@ -1,7 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+// vite.config.js
+import ReactRefresh from '@vitejs/plugin-react-refresh';
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+export default {
+  plugins: [ReactRefresh()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: './src/index.jsx', // Adjust the path accordingly
+      },
+    },
+  },
+};
