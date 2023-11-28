@@ -17,8 +17,8 @@
 
 .new__btn {
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-right: 300px;
 }
 
@@ -74,7 +74,7 @@
 
 .offCanvasBody {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
 }
 
